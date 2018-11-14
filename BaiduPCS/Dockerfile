@@ -5,7 +5,7 @@ RUN apk update && apk upgrade \
     && wget http://qiniu.zoranjojo.top/BaiduPCS-Go-${VERSION}-linux-arm64.zip \
     && unzip BaiduPCS-Go-${VERSION}-linux-arm64.zip \
     && mv BaiduPCS-Go-${VERSION}-linux-arm64/BaiduPCS-Go BaiduPCS-Go \
-    && rm -rf BaiduPCS-Go-${VERSION}-linux-arm64*\	  
+    && rm -rf BaiduPCS-Go-${VERSION}-linux-arm64.zip\	  
     && chmod a+x BaiduPCS-Go	  
 VOLUME /Downloads
 EXPOSE 5299
