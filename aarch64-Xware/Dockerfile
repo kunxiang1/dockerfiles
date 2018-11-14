@@ -8,6 +8,6 @@ WORKDIR /xware
 ADD Xware1.0.31_armel_v5te_glibc.tar.gz /xware
 ADD monitor.sh /xware
 
-VOLUME /data
+VOLUME /TDDownload
 
-ENTRYPOINT ["monitor.sh"]
+ENTRYPOINT ["./monitor.sh"]
