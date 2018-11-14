@@ -1,9 +1,8 @@
 FROM forumi0721/alpine-aarch64-base
 
 
-RUN cd / && apk update && apk upgrade \
-    && apk --no-cache add libc6 zlib1g tar \
-    && chmod a+x /xware/*\
+RUN apk update && apk upgrade \
+    && apk --no-cache add libc6-compat zlib-dev\
 
 WORKDIR /xware
 ADD Xware1.0.31_armel_v5te_glibc.tar.gz /xware
