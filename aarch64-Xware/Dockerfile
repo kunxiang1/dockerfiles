@@ -1,7 +1,7 @@
 FROM forumi0721/alpine-aarch64-base
 
 
-RUN dpkg --add-architecture armhf && apt-get update \
+RUN     apt-get update \
 	&& apt-get install libc6:armhf zlib1g:armhf \
 	&& ln -s /lib/ld-linux-armhf.so.3 /lib/ld-linux.so.3\
 
