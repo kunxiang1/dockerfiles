@@ -6,7 +6,7 @@ RUN apk update && apk upgrade \
     && unzip BaiduPCS-Go-${VERSION}-linux-arm64.zip \
     && mv BaiduPCS-Go-${VERSION}-linux-arm64/BaiduPCS-Go BaiduPCS-Go \
     && rm -rf BaiduPCS-Go-${VERSION}-linux-arm64\	  
-    && chmod a+x BaiduPCS-Go \	  
+    && chmod a+x BaiduPCS-Go	  
 VOLUME /Downloads
 EXPOSE 5299
 ENTRYPOINT ["./BaiduPCS-Go"]
