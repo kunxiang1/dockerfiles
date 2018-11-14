@@ -1,7 +1,7 @@
 FROM forumi0721/alpine-aarch64-base
 ENV VERSION=3.5.8
 RUN apk update && apk upgrade \
-    && apk --no-cache add  no-cache wget unzip \
+    && apk --no-cache add wget unzip \
     && wget http://qiniu.zoranjojo.top/BaiduPCS-Go-${VERSION}-linux-arm64.zip \
     && unzip BaiduPCS-Go-${VERSION}-linux-arm64.zip \
     && mv /BaiduPCS-Go-${VERSION}-linux-amd64/BaiduPCS-Go BaiduPCS-Go \
