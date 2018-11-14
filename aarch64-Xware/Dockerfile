@@ -1,9 +1,8 @@
-FROM forumi0721/alpine-aarch64-base
+FROM forumi0721/alpine-armhf-base
 
 
 RUN apk update && apk upgrade \
-    && apk --no-cache add libc6:armhf zlib1g:armhf \
-    && ln -s /lib/ld-linux-armhf.so.3 /lib/ld-linux.so.3\
+    && apk --no-cache add libc6 zlib1g\
 
 WORKDIR /xware
 ADD Xware1.0.31_armel_v5te_glibc.tar.gz /xware
