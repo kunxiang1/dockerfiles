@@ -1,5 +1,5 @@
 FROM forumi0721/alpine-aarch64-base
-ENV VERSION=3.5.9
+ENV VERSION=3.6.5
 RUN apk update \
     && apk --no-cache add wget unzip \
     && wget http://qiniu.zoranjojo.top/BaiduPCS-Go-${VERSION}-linux-arm64.zip \
